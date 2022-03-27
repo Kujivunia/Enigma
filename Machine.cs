@@ -12,7 +12,7 @@ namespace Enigma
         private int[] RotorsIndex;
         private int[] RotorsStartPositions;
         List<Rotor> DefaultRotors = new List<Rotor>();
-        private string abc = " abcdefghijklmnopqrstuvwxyz.,!?-—()<>[]{}\'\":;`~1234567890_=+\\|/*@#$%^&абвгдеёжзийклмнопрстуфхцчшщъыьэюя";//Длинное тире не работает в консольном выводе и ломает шифровку
+        private string abc = " abcdefghijklmnopqrstuvwxyz.,!?-()<>[]{}:;~1234567890_=+*@#$%^&абвгдеёжзийклмнопрстуфхцчшщъыьэюя";//" abcdefghijklmnopqrstuvwxyz.,!?-—()<>[]{}\'\":;`~1234567890_=+\\|/*@#$%^&абвгдеёжзийклмнопрстуфхцчшщъыьэюя";//Длинное тире не работает в консольном выводе и ломает шифровку
         public Machine(int DefaultRotorsCount = 12)
         {
             for (int i = 0; i < abc.Length; i++)
